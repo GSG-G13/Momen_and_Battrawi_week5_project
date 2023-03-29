@@ -1,11 +1,16 @@
 const express = require('express');
+const path = require('path');
 
 const router = express.Router();
 const {
   handleSearch, notFoundError, serverError,
 } = require('../controllers');
 
-router.post('/search', handleSearch);
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', '..', 'public', 'html', 'index.html'));
+});
+
+router.get('/search', handleSearch);
 
 router.get(notFoundError);
 router.use(serverError);

@@ -3,7 +3,7 @@
 because the server is listening still */
 const app = require('./app');
 
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`The things, the things are happening on ${port}!!`);
