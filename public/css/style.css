@@ -1,0 +1,204 @@
+/* Global styles */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+    
+    h1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #333;
+    }
+    
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: #666;
+    }
+
+    .section-title{
+      text-align: center;
+    }
+    
+    /* News card styles */
+    .news-card-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+
+ @media screen and (max-width: 767px) {
+  .news-card-container {
+    text-align: center;
+  }
+ }
+   
+    
+    .news-card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .news-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px 0 0 5px;
+    }
+    
+    .news-card .content {
+      padding: 1.5rem;
+    }
+    
+    .news-card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    
+    .news-card p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    
+    .news-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: 2px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .news-card a:hover {
+      background-color: #666;
+    }
+    
+    /* Responsive styles */
+    @media screen and (max-width: 767px) {
+      .news-card {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+      
+      .news-card img {  
+      border-radius: 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      }
+    }
+    /* Header styles */
+    header {
+      background-color: #fff;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    @media screen and (max-width: 767px) {
+  main{
+    margin-left: 25px;
+  }
+ }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #333;
+    }
+
+    .search-container {
+      position: relative;
+    }
+
+    @media (max-width: 600px){
+      .search-container {
+        width: 214px;
+      }
+    }
+
+    .search-container input {
+      width: 300px;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      padding: 0 15px;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-color: #f8f8f8;
+    }
+
+    .search-container button {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .search-container button:hover {
+      background-color: #666;
+    }
