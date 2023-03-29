@@ -1,14 +1,11 @@
 const express = require('express');
-const path = require('path');
 
 const router = express.Router();
 const {
-  handleSearch, notFoundError, serverError,
+  handleSearch, notFoundError, serverError, staticFiles
 } = require('../controllers');
 
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', '..', 'public', 'html', 'index.html'));
-});
+router.get('/', staticFiles);
 
 router.get('/search', handleSearch);
 
