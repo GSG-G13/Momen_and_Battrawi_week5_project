@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 const {
-  handleSearch, notFoundError, serverError, staticFiles
+  handleSearch, notFoundError, serverError, staticFiles,
 } = require('../controllers');
 
 router.get('/', staticFiles);
