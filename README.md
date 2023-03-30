@@ -1,6 +1,12 @@
 # Get-News-Project 📰🗞️
 
 `Get-News` An application that depends on the API to display the data inside it from the server, where you can see the latest news and search for news related to a specific topic.
+# introduction
+-The real world treasure is oil, but!! What is virtual world treasure.
+Rather, there are some people who consider information to be the real treasure for the world.
+The ancients said, "Just as there is food for the body, there is food for the mind, which is information."
+One of the forms of this information is news. News is considered information about what is happening now or about what happened in the past in various fields (politics, sports, technology, art, etc.)
+<hr>
 
 ### Live demo [_here_](https://momen-battrawi-newsapp.onrender.com/)
 
