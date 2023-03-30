@@ -1,4 +1,4 @@
-# Get-News-Project 🖼
+# Get-News-Project 📰🗞️
 
 `Get-News` An application that depends on the API to display the data inside it from the server, where you can see the latest news and search for news related to a specific topic.
 
