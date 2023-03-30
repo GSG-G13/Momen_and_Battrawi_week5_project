@@ -37,14 +37,14 @@ const updateDom = (data) => {
 };
 
 (() => {
-  fetch('http://localhost:3000/search?keyword=top')
+  fetch('/search?keyword=top')
     .then((response) => response.json())
     .then((data) => updateDom(data))
     .catch((error) => console.error(error));
 })();
 
 submitBtn.addEventListener('click', () => {
-  fetch(`http://localhost:3000/search?keyword=${searchInput.value}`)
+  fetch(`/search?keyword=${searchInput.value}`)
     .then((response) => response.json())
     .then((data) => updateDom(data))
     .catch((error) => console.error(error));

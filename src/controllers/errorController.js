@@ -9,5 +9,6 @@ const serverError = (err, req, res, next) => {
   res
     .status(500)
     .sendFile(path.join(__dirname, '..', '..', 'public', 'html', 'error500.html'));
+  next();
 };
 module.exports = { notFoundError, serverError };
